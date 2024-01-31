@@ -1,3 +1,14 @@
+# My Personal Web Portfolio
+Link: https://bmaaac.github.io/WebPortfolio/
+
+👋Hello! Welcome! This repository is for my portfolio. It is currently a work in progress; some changes and improvements will be updated.👀
+
+-Built using ReactJs, SASS
+
+1.31.2024
+-currently working on animations/mobile optimizations.
+
+##
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
