@@ -168,6 +168,7 @@ div {
         margin-left: 120%;
         object-fit: contain;  
         filter: drop-shadow(0px 0px 8px #fff);
+        animation: fadeIn 2s 0.4s backwards;
     }
         //earth animation
         .earth-signal {
@@ -199,7 +200,7 @@ div {
             height: 700px;
             margin-left: -400px;
             margin-top: -400px;
-            border-color: #2e5075;
+            border-color: #517092;
             opacity: 0;
             }
         }
