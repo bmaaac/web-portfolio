@@ -4,41 +4,43 @@
     position: absolute;
 }
 
+.home-page,
 .contact-page,
-.about-page {
+.about-page { 
 
     h1{
         font-size: 50px;
-        font-family: 'La Belle Aurore', cursive;
+        font-family: 'Coolvetica', cursive;
         color: #178582;
         font-weight: 600;
         position: relative;
         margin-top: -10px;
         margin-bottom: 35px;
         left: 0px;
+        text-shadow: -3px 0px 0px #c7aa8b;
+        animation: fadeIn 1s 0.2s backwards, pulse 2s;
+    }
 
-        &:before {
-            font-family: Verdana, Arial;
-            color: #178582;
-            font-size: 18px;
-            position: absolute;
-            margin-top: -10px;
-            left: -10px;
-            opacity: 0.6;
-            line-height: 18px;
-        }
+    h2{
+        font-size: 50px;
+        font-family: 'Coolvetica', cursive;
+        color: #178582;
+        font-weight: 600;
+        position: relative;
+        margin-top: -10px;
+        margin-bottom: 35px;
+        left: 0px;
+    }
 
-        &:after {
-            font-family: Verdana, Arial;
-            color: #178582;
-            font-size: 18px;
-            line-height: 18px;
-            position: absolute;
-            left: -30px;
-            bottom: -20px;
-            margin-left: 20px;
-            opacity: 0.6;
-        }
+    h3{
+        font-size: 50px;
+        font-family: 'Coolvetica', cursive;
+        color: #178582;
+        font-weight: 600;
+        position: relative;
+        margin-top: -10px;
+        margin-bottom: 35px;
+        left: 0px;
     }
 
     p{
@@ -68,11 +70,5 @@
 @media screen and (max-width: 600px){
     .page{
         position: initial;
-    }
-
-    .container{
-        position: initial;
-        height: auto;
-        min-height: auto;
     }
 }

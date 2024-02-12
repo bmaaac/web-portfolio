@@ -1,32 +1,33 @@
 import './index.scss'
 import { React, useRef } from 'react'
-import emailjs from '@emailjs/browser'
 import satellite from './img/Satellite.png'
 import earth from './img/Earth.png'
 import resume from './Resume.pdf'
+import emailjs from '@emailjs/browser'
 
 const Contact = () => {
 
     const refForm = useRef()
     const sendEmail = (e) => {
-        e.preventDefault()
+    e.preventDefault();
 
-        emailjs.sendForm(
-            'gmail',
-            'template_z5dbgbm',
-            refForm.current,
-            '7u23sWW-W9vq8Vplg'
+        emailjs.sendForm (
+            'service_0qw80ot', 
+            'template_z5dbgbm', 
+            refForm.current, 
+            {publicKey: '7u23sWW-W9vq8Vplg'}
         )
+
         .then(
             () => {
-              alert('Message successfully sent!')
-              window.location.reload(false)
+                alert('Message successfully sent!');
+                window.location.reload(false)
             },
-            () => {
-              alert('Failed to send the message, please try again')
+            (error) => {
+                alert('Failed to send the message, please try again', error.text);
             }
-          )
-      }
+        )
+    }
 
     return (
         <div className='contact-page'>
