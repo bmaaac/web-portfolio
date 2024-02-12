@@ -12,7 +12,7 @@ const Contact = () => {
     e.preventDefault();
 
         emailjs.sendForm (
-            'service_0qw80ot', 
+            'gmail', 
             'template_z5dbgbm', 
             refForm.current, 
             {publicKey: '7u23sWW-W9vq8Vplg'}
