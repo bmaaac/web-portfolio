@@ -478,6 +478,11 @@ div {
 
 @media screen and (max-width: 600px) {
 
+    .contact-page {
+        overflow: visible;
+        margin: auto;
+    }
+
     .contact-page .text-zone {
         top: 340px;
         width: 90%;

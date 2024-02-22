@@ -1,3 +1,11 @@
+body {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 
 .avatar img {
     position: relative;
@@ -12,7 +20,7 @@
 
 .about-animation {
     width: 100%;
-    height:100vh;
+    height:100%;
 
     //shootingstars
     * {
@@ -24,12 +32,14 @@
     
     body {
         overflow: hidden;
+        width: 100%;
+        height: 100%;
     }
 
     .stars li {
         position: absolute;
         top: 50%;
-        left: 100%;
+        // left: 100%;
         width: 4px;
         height: 4px;
         background: #fff;
@@ -207,6 +217,17 @@
 
 @media screen and (max-width: 600px) {
 
+    body {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+    }
+
+    .contact-page {
+        overflow: hidden;
+        height:100%;
+    }
+
     .about-page h1 {
         text-align: center;
     }
@@ -227,9 +248,8 @@
     }
 
     //temporary fix
-    .avatar img{
-        display: none;
-    }
+    
+    .avatar img,
     .rocket img,
     .burn{
         display: none;

@@ -233,6 +233,10 @@
 
 @media screen and (max-width: 600px) {
 
+    .home-page{
+        overflow: visible;
+    }
+
     .home-page .text-zone {
         width: 80%;
     }
