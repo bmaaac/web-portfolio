@@ -5,7 +5,8 @@ const Projects = () => {
     return(
         <div className='projects-page'>
             <div className='text-zone'>
-                <h1>Empty</h1>
+                <h1>Sorry :)</h1>
+                <p>Projects are currently in development.</p>
             </div>
         </div>
     )
