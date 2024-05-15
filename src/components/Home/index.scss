@@ -1,6 +1,6 @@
 .home-page{
 
-    div {
+    div{
         display: block;
     }
 
@@ -16,12 +16,11 @@
     h1{
         color: #178582;
         font-size: 56px;
-        line-height: 53px;
+        line-height: 30px;
         margin: 0;
-        // font-family: 'La Belle Aurore', cursive;
         font-weight: 600;
-        text-shadow: -3px 0.6px 0px #c7aa8b;
-        animation: fadeIn 2s 1s backwards, pulse 3s;
+        text-shadow: -3px 0px 0px #c7aa8b;
+        animation: fadeIn 0.8s 1s backwards, pulse 2s;
     }
 
     h2{
@@ -31,9 +30,8 @@
         text-align: justify;
         font-weight: 600;
         font-size: 15px;
-        // font-family: sans-serif;
         letter-spacing: 2px;
-        animation: fadeIn 1.2s 1.8s backwards, pulse 4s;
+        animation: fadeIn 1.2s 1.2s backwards, pulse 2.2s;
 
         a:link {
             color: #fff;
@@ -65,7 +63,6 @@
 
     h3{
         content: '';
-        // font-family: 'La Belle Aurore', cursive;
         color: #BFA181;
         font-size: 18px;
         font-weight: 600;
@@ -73,22 +70,21 @@
         position: absolute;
         margin-top: -40px;
         left: -15px;
-        animation: fadeIn 0.4s 0.5s backwards;
+        animation: fadeIn 0.2s 0.4s backwards;
         opacity: 1;
     }
 
-    .contact-button{
+    .project-button{
         color: #BFA181;
         font-size: 13px;
         font-weight: 800;
         letter-spacing: 4px;
-        font-family: sans-serif;
         text-decoration: none;
         padding: 10px 18px;
         border: 2px solid #178582;
-        margin-top: 35px;
+        margin-top: 28px;
         float: left;
-        animation: fadeIn 2s 2.8s backwards;
+        animation: fadeIn 1.8s 2.2s backwards;
         white-space: nowrap;
 
         &:hover {

@@ -7,6 +7,18 @@ body {
     padding: 0;
 }
 
+.hireme {
+    position: fixed;
+    margin-top: 550px;
+    margin-left: 70px;
+    animation: fadeIn 2s 2.2s backwards;
+
+    img{
+        max-width: 70%;
+        max-height: 70%;
+    }
+}
+
 @media screen and (max-width: 600px) {
 
     body {

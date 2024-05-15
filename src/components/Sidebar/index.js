@@ -2,8 +2,9 @@ import './index.scss'
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHouse,faUser,faEnvelope,faBars,faClose,faFolderOpen } from '@fortawesome/free-solid-svg-icons'
+import { faHouse,faUser,faEnvelope,faBars,faClose,faFolderOpen,faFilePdf } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin,faGithub } from '@fortawesome/free-brands-svg-icons'
+import resume from './Resume.pdf'
 
 const Sidebar = () => {
 
@@ -23,6 +24,13 @@ const Sidebar = () => {
                     </NavLink>
                     <NavLink
                         activeclassname='active' 
+                        className='projects-link' 
+                        to='/projects'
+                        onClick={() => setShowNav(false)}>
+                    <FontAwesomeIcon icon={faFolderOpen} color='#BFA181' />
+                    </NavLink>
+                    <NavLink
+                        activeclassname='active' 
                         className='about-link' 
                         to='/about'
                         onClick={() => setShowNav(false)}>
@@ -34,13 +42,6 @@ const Sidebar = () => {
                         to='/contact'
                         onClick={() => setShowNav(false)}>
                     <FontAwesomeIcon icon={faEnvelope} color='#BFA181' />
-                    </NavLink>
-                    <NavLink
-                        activeclassname='active' 
-                        className='projects-link' 
-                        to='/projects'
-                        onClick={() => setShowNav(false)}>
-                    <FontAwesomeIcon icon={faFolderOpen} color='#BFA181' />
                     </NavLink>
 
                     <FontAwesomeIcon
@@ -59,6 +60,11 @@ const Sidebar = () => {
                         <li>
                             <a target='_blank' rel='noreferrer' href='https://github.com/bmaaac'>
                             <FontAwesomeIcon icon={faGithub} color='#BFA181' />
+                            </a>
+                        </li>
+                        <li>
+                            <a target='_blank' rel='noreferrer' href={resume}>
+                            <FontAwesomeIcon icon={faFilePdf} color='#BFA181' />
                             </a>
                         </li>
                     </ul>

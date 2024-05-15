@@ -2,8 +2,6 @@ import './index.scss'
 import { React, useRef } from 'react'
 import satellite from './img/Satellite.png'
 import earth from './img/Earth.png'
-import hireMe from './img/HireMe.png'
-import resume from './Resume.pdf'
 import emailjs from '@emailjs/browser'
 
 const Contact = () => {
@@ -73,9 +71,6 @@ const Contact = () => {
                             </li>
                             <li>
                                 <input type='submit' className='send-button' value='SEND' />
-                                <a href = { resume } input type='button' className='resume-button' 
-                                target = "_blank" rel="noreferrer">RESUME / CV </a>
-                                <img src ={ hireMe } className='hireme' draggable="false" alt='' />
                             </li>
                         </ul>
                     </form>

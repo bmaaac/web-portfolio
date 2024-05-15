@@ -9,10 +9,10 @@ const Home = () => {
                 <h1>I'm Brian</h1>
                 <h2>A Front-End Developer based <br></br> in <a href="https://www.google.com/search?client=opera-gx&q=bacolod+city&sourceid=opera&ie=UTF-8&oe=UTF-8" 
                     target="_blank" rel="noreferrer">Bacolod City, Philippines</a></h2>
-                <Link to='/contact' className='contact-button'>CONTACT ME</Link>        
+                <Link to='/projects' className='project-button'>PROJECTS</Link>
             </div>
-            <div class="home-BGanimation" >
-                <ul class="circles">
+            <div className="home-BGanimation" >
+                <ul className="circles">
                     <li></li>
                     <li></li>
                     <li></li>

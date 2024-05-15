@@ -4,54 +4,53 @@
     position: absolute;
 }
 
-.home-page,
 .contact-page,
 .about-page,
 .projects-page { 
 
     h1{
-        font-size: 50px;
-        font-family: 'Coolvetica', cursive;
+        font-size: 36px;
         color: #178582;
+        line-height: 26px;
         font-weight: 600;
         position: relative;
-        margin-top: -10px;
-        margin-bottom: 35px;
-        left: 0px;
-        text-shadow: -3px 0px 0px #c7aa8b;
-        animation: fadeIn 1s 0.2s backwards, pulse 2s;
+        // margin-top: -10px;
+        margin-bottom: 26px;
+        text-shadow: -2.4px 0px 0px #c7aa8b;
+        animation: fadeIn 1s 0.2s backwards, pulse 1s;
     }
+    
 
-    h2{
-        font-size: 50px;
-        font-family: 'Coolvetica', cursive;
-        color: #178582;
-        font-weight: 600;
-        position: relative;
-        margin-top: -10px;
-        margin-bottom: 35px;
-        left: 0px;
-    }
+    //Not of use yet...
+    // h2{
+    //     font-size: 50px;
+    //     color: #178582;
+    //     font-weight: 600;
+    //     position: relative;
+    //     margin-top: -10px;
+    //     margin-bottom: 35px;
+    //     left: 0px;
+    // }
 
-    h3{
-        font-size: 50px;
-        font-family: 'Coolvetica', cursive;
-        color: #178582;
-        font-weight: 600;
-        position: relative;
-        margin-top: -10px;
-        margin-bottom: 35px;
-        left: 0px;
-    }
+    // h3{
+    //     font-size: 50px;
+    //     color: #178582;
+    //     font-weight: 600;
+    //     position: relative;
+    //     margin-top: -10px;
+    //     margin-bottom: 35px;
+    //     left: 0px;
+    // }
+    //Not of use yet...
 
     p{
         margin-top: -10px;
         text-align: justify;
         font-size: 16px;
         color: #fff;
-        font-family: sans-serif;
-        font-weight: 800;
-        letter-spacing: 0.2px;
+        font-weight: 600;
+        letter-spacing: 0.3px;
+        line-height: 26px;
         max-width: fit-content;
         animation: fadeIn 1s 0.4s backwards;
     }
