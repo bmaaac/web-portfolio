@@ -1,4 +1,5 @@
 import "./index.scss";
+import hireMe from "./HireMe.png";
 import websiteImage1 from "./webimg.png"; // Replace with your actual image paths
 // import websiteImage2 from "./websiteImage2.png";
 
@@ -46,6 +47,9 @@ const Projects = () => {
             </a>
           ))}
         </div>
+      </div>
+      <div className="hireme">
+        <img src={hireMe} draggable="false" alt="" />
       </div>
     </div>
   );
