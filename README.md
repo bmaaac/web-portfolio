@@ -7,7 +7,7 @@ The purpose of this project is to get a career in the tech industry.✌️
 - Built using ReactJs, SASS
 
 1.31.2024
--currently working on animations/mobile optimizations.
+- currently working on animations/mobile optimizations.
 
 11.5.2024
 - currently working on the alignment (I am aware it is janky😅) I've realized it is broken in 1920x1080 res and above.
