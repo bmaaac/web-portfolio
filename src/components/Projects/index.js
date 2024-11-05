@@ -7,7 +7,7 @@ const Projects = () => {
   const projectData = [
     {
       title: "Product Management",
-      description: "simple crud app",
+      description: "simple crud app with Firebase Realtime Database",
       image: websiteImage1,
       link: "https://bmaaac.github.io/crud_reactfirebase/", // Replace with actual link
     },
