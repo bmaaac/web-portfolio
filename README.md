@@ -1,7 +1,8 @@
 # My Personal Web Portfolio
 Link: https://bmaaac.github.io/WebPortfolio/
 
-👋Hello! Welcome! This repository is for my portfolio. It is currently a work in progress; some changes and improvements will be updated.👀
+👋Hello! Welcome! This repository is for my portfolio. It is currently a work in progress; some changes and improvements will be updated.
+The purpose of this project is to get a career in the tech industry.✌️
 
 -Built using ReactJs, SASS
 
