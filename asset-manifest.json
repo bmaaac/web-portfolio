@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/WebPortfolio/static/css/main.aa32bb1c.css",
-    "main.js": "/WebPortfolio/static/js/main.00774ee8.js",
+    "main.css": "/WebPortfolio/static/css/main.1e4f6d81.css",
+    "main.js": "/WebPortfolio/static/js/main.a452b74e.js",
     "static/js/787.7da95b79.chunk.js": "/WebPortfolio/static/js/787.7da95b79.chunk.js",
     "static/media/Resume.pdf": "/WebPortfolio/static/media/Resume.d31c3864beab5a73f118.pdf",
     "static/media/SpaceShuttle.png": "/WebPortfolio/static/media/SpaceShuttle.4bde687e288c1ddb99a1.png",
@@ -10,12 +10,12 @@
     "static/media/Satellite.png": "/WebPortfolio/static/media/Satellite.07a2649dda2bebb420bf.png",
     "static/media/webimg.png": "/WebPortfolio/static/media/webimg.d4b5e7384c9cdbafbbbe.png",
     "index.html": "/WebPortfolio/index.html",
-    "main.aa32bb1c.css.map": "/WebPortfolio/static/css/main.aa32bb1c.css.map",
-    "main.00774ee8.js.map": "/WebPortfolio/static/js/main.00774ee8.js.map",
+    "main.1e4f6d81.css.map": "/WebPortfolio/static/css/main.1e4f6d81.css.map",
+    "main.a452b74e.js.map": "/WebPortfolio/static/js/main.a452b74e.js.map",
     "787.7da95b79.chunk.js.map": "/WebPortfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.aa32bb1c.css",
-    "static/js/main.00774ee8.js"
+    "static/css/main.1e4f6d81.css",
+    "static/js/main.a452b74e.js"
   ]
 }
