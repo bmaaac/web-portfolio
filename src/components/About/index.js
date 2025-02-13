@@ -1,14 +1,17 @@
+import React from "react";
 import "./index.scss";
-import shuttle from "./img/SpaceShuttle.png";
 import avatar from "./img/Avatar.png";
+import Stars from "../_bg-animations/About_BG/backgroundStars";
+import Spaceshuttle from "./svgShuttle";
 
 const About = () => {
   return (
     <div className="about-page">
-      <div className="avatar">
-        <img src={avatar} draggable="false" alt="" />
-      </div>
+      <Stars />
       <div className="text-zone">
+        <div className="avatar">
+          <img src={avatar} draggable="false" alt="" />
+        </div>
         <h1>About me</h1>
         <p>
           I'm quite fascinated when it comes to computers and technology in
@@ -17,23 +20,8 @@ const About = () => {
           constantly intrigued by the ever-evolving world of technology.
         </p>
       </div>
-      <div className="about-animation">
-        <ul class="stars">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-        <div className="rocket">
-          <img src={shuttle} draggable="false" alt="" />
-          {/* <div className='burn'></div> currently disabled */}
-        </div>
+      <div>
+        <Spaceshuttle className="spaceshuttle" />
       </div>
     </div>
   );

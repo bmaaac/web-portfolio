@@ -3,6 +3,7 @@ import { React, useRef } from "react";
 import satellite from "./img/Satellite.png";
 import earth from "./img/Earth.png";
 import emailjs from "@emailjs/browser";
+import Stars from "../_bg-animations/Contact_BG/backgroundStars";
 
 const Contact = () => {
   const refForm = useRef();
@@ -30,6 +31,7 @@ const Contact = () => {
 
   return (
     <div className="contact-page">
+      <Stars />
       <div className="text-zone">
         <h1>Contact</h1>
         <p>Feel free to send me a message</p>
@@ -38,17 +40,9 @@ const Contact = () => {
           <section>
             <div className="satellite">
               <img src={satellite} draggable="false" alt="" />
-              {/* <div className='radar'>
-                                        <div class="Arc Out">
-                                            <div class="Arc Middle">
-                                                <div class="Arc In"></div>
-                                            </div>
-                                        </div>
-                                    </div> */}
             </div>
             <div className="earth">
               <img src={earth} draggable="false" alt="" />
-              {/* <div className='earth-signal'></div>  currently disabled */}
             </div>
           </section>
         </div>

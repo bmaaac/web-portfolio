@@ -1,208 +1,181 @@
-
 div {
-    display: block;
+  display: block;
 }
 
 .contact-form {
-    z-index: 1;
-    width: 90%;
-    margin-top: 1px;
+  z-index: 1;
+  width: 90%;
+  margin-top: 1px;
 
-    ul {
-        padding: 0;
-        margin: 0;
+  ul {
+    padding: 0;
+    margin: 0;
 
-        li {
-            padding: 0;
-            margin: 0;
-            list-style: none;
-            margin-bottom: 10px;
-            overflow: hidden;
-            display: block;
-            clear: both;
-            position: relative;
-            animation: fadeInUp 1s ease;
-            animation-fill-mode: forwards;
-        }
-
-        li.half {
-            width: 49%;
-            margin-left: 2%;
-            float: left;
-            clear: none;
-
-            &:first-child {
-                margin-left: 0;
-            }
-        }
+    li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      margin-bottom: 10px;
+      overflow: hidden;
+      display: block;
+      clear: both;
+      position: relative;
+      animation: lightSpeedInLeft 1s;
+      animation-fill-mode: forwards;
     }
 
-    input[type='text'],
-    input[type='email'] {
-        width: 100%;
-        border: 0;
-        background: #115173;
-        height: 50px;
-        font-size: 16px;
-        color: #fff;
-        padding: 0 20px;
-        opacity: 80%;
-        box-sizing: border-box;
-    }
+    li.half {
+      width: 49%;
+      margin-left: 2%;
+      float: left;
+      clear: none;
 
-    textarea {
-        width: 100%;
-        border: 0;
-        background: #115173;
-        height: 50px;
-        font-size: 16px;
-        color: #fff;
-        padding: 20px;
-        box-sizing: border-box;
-        min-height: 150px;
-        opacity: 80%;
+      &:first-child {
+        margin-left: 0;
+      }
     }
+  }
 
-        .send-button {
-        color: #BFA181;
-        font-size: 13px;
-        font-weight: 800;
-        letter-spacing: 4px;
-        text-decoration: none;
-        padding: 8px 18px;
-        background-color: #0A1828;
-        border: 2px solid #178582;
-        margin-top: 2px;
-        float: left;
-        white-space: nowrap;
-    
-        &:hover {
-            background: #BFA181;
-            color: #0A1828;
-            border-color: #88735c;
-        } 
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+    border: 0;
+    background: #115173;
+    height: 50px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 20px;
+    opacity: 80%;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    width: 100%;
+    border: 0;
+    background: #115173;
+    height: 50px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 150px;
+    opacity: 80%;
+  }
+
+  .send-button {
+    color: #bfa181;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    text-decoration: none;
+    padding: 8px 18px;
+    background-color: #0a1828;
+    border: 2px solid #178582;
+    margin-top: 2px;
+    float: left;
+    white-space: nowrap;
+
+    &:hover {
+      background: #bfa181;
+      color: #0a1828;
+      border-color: #88735c;
     }
+  }
 }
 
 .contact-animation {
-    
-    * {
-        z-index: -1;
-        margin:0;
-        padding: 0;
-        box-sizing: border-box;
+  * {
+    z-index: -1;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    overflow: hidden;
+  }
+
+  section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  @keyframes shake {
+    0%,
+    100% {
+      transform: translateY(-2px);
     }
 
-    body {
-        overflow: hidden;
+    50% {
+      transform: translateY(2px);
     }
+  }
 
-    section {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+  .earth {
+    position: absolute;
+    width: 100%;
+    border-bottom: 0;
+    align-items: normal;
+  }
+
+  .earth img {
+    width: 310px;
+    margin-left: 131%;
+    object-fit: contain;
+    filter: drop-shadow(0px 0px 8px #fff);
+    animation: fadeIn 2s 0.4s backwards;
+  }
+
+  .satellite {
+    position: relative;
+    width: 100%;
+    border-bottom: 0;
+    align-items: normal;
+    animation: fadeIn 2s 0.4s backwards, launch 4s ease-out;
+  }
+
+  .satellite img {
+    width: 300px;
+    margin-left: 180%;
+    margin-top: 0;
+    object-fit: contain;
+    filter: drop-shadow(0px 0px 2px #fff);
+    animation: shake 3s ease-out infinite;
+  }
+
+  @keyframes launch {
+    0% {
+      transform: rotate(-15deg) translateY(1000px);
     }
-
-        @keyframes shake {
-
-            0%, 100%{
-                transform: translateY(-2px);
-            }
-            
-            50%{
-                transform: translateY(2px);
-            }
-        }
-
-    .earth {
-        position: absolute;
-        width: 100%;
-        border-bottom: 0;
-        align-items: normal;
+    50% {
+      transform: translateY(-10px);
     }
-
-    .earth img {
-        width: 300px;
-        margin-left: 120%;
-        object-fit: contain;  
-        filter: drop-shadow(0px 0px 8px #fff);
-        animation: fadeIn 2s 0.4s backwards;
+    100% {
+      transform: translateY(0px);
     }
-        //earth animation
-        .earth-signal {
-            position: relative;
-            top: -100px;
-            right: -160%;
-            width: 50px;
-            height: 50px;
-            background-color: transparent;
-            border-radius: 50%;
-            border: 2px solid #fff;
-            animation: earthSignal 4s infinite;
-            -webkit-animation: earthSignal 4s infinite;
-            -webkit-transition: all ease-in-out;
-            transition: all ease-in;
-        }
-        
-        @keyframes earthSignal {
-            1% {
-            width: 51px;
-            height: 51px;
-            margin-left: -25.5px;
-            margin-top: -25.5px;
-            border-color: #000;
-            opacity: 100;
-            }
-            100% {
-            width: 700px;
-            height: 700px;
-            margin-left: -400px;
-            margin-top: -400px;
-            border-color: #517092;
-            opacity: 0;
-            }
-        }
-
-    .satellite {
-        position: relative;
-        width: 100%;
-        border-bottom: 0;
-        align-items: normal;
-        animation: launch 4s ease-out;
-    }
-
-    .satellite img {
-        width: 300px;
-        margin-left: 180%;
-        margin-top: 0;
-        object-fit: contain;  
-        filter: drop-shadow(0px 0px 2px #fff);
-        animation: shake 3s ease-out infinite;
-    }
-
+  }
 }
 
-
 @media screen and (max-width: 600px) {
+  .contact-page {
+    overflow: visible;
+    margin: auto;
+  }
 
-    .contact-page {
-        overflow: visible;
-        margin: auto;
-    }
+  .contact-page .text-zone {
+    top: 340px;
+    width: 90%;
+    margin-left: -10px;
+  }
 
-    .contact-page .text-zone {
-        top: 340px;
-        width: 90%;
-        margin-left: -10px;
-    }
+  .contact-animation {
+    display: none;
+  }
 
-    .contact-animation{
-        display: none;
-    }
-
-    .hireme {
-        display: none;
-    }
+  .hireme {
+    display: none;
+  }
 }
