@@ -1,6 +1,6 @@
 .nav-bar {
   background: #161616;
-  width: 60px;
+  width: 70px;
   height: 100%;
   position: absolute;
   top: 0;
@@ -62,6 +62,12 @@
       }
     }
 
+    a.projects-link {
+      &:after {
+        content: "PROJECTS";
+      }
+    }
+
     a.about-link {
       &:after {
         content: "ABOUT";
@@ -70,12 +76,7 @@
 
     a.contact-link {
       &:after {
-        content: "CONTACT";
-      }
-    }
-    a.projects-link {
-      &:after {
-        content: "PROJECTS";
+        content: "HIRE ME?";
       }
     }
   }
@@ -97,9 +98,48 @@
         font-size: 20px;
         line-height: 15px;
 
+        // i {
+        //   transition: all 0.5s ease-out;
+        // }
+
+        &:hover {
+          color: #bfa181;
+
+          svg {
+            opacity: 1;
+          }
+
+          &:after {
+            opacity: 1;
+          }
+        }
+
+        &:after {
+          content: "";
+          font-size: 9px;
+          position: absolute;
+          top: 10px;
+          display: block;
+          width: 100%;
+          text-align: center;
+          opacity: 0;
+          transition: all 0.5s ease-out;
+        }
+
+        &:first-child {
+          &:after {
+            content: "";
+          }
+        }
+
         &:hover svg {
           color: #178582;
           animation: rubberBand 1s;
+        }
+      }
+      a.resume-link {
+        &:after {
+          content: "RESUME";
         }
       }
     }

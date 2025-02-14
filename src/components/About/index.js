@@ -21,7 +21,10 @@ const About = () => {
         </p>
       </div>
       <div>
-        <Spaceshuttle className="spaceshuttle" />
+        <Spaceshuttle
+          style={{ transform: "rotate(40deg)" }}
+          className="spaceshuttle"
+        />
       </div>
     </div>
   );

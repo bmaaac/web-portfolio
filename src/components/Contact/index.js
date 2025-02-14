@@ -34,7 +34,9 @@ const Contact = () => {
       <Stars />
       <div className="text-zone">
         <h1>Contact</h1>
-        <p>Feel free to send me a message</p>
+        <p>
+          Hire me to build your website or feel free to send me a message 😁
+        </p>
 
         <div className="contact-animation">
           <section>
