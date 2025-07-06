@@ -1,6 +1,6 @@
 import "./index.scss";
 import websiteImage1 from "./webimg.png"; // Replace with your actual image paths
-// import websiteImage2 from "./websiteImage2.png";
+import websiteImage2 from "./webimg2.png";
 
 const Projects = () => {
   const projectData = [
@@ -8,14 +8,15 @@ const Projects = () => {
       title: "Product Management",
       description: "simple crud app with Firebase Realtime Database",
       image: websiteImage1,
-      link: "https://bmaaac.github.io/crud_reactfirebase/", // Replace with actual link
+      link: "https://bmaaac.github.io/crud_reactfirebase/",
     },
-    // {
-    //   title: "Youtube",
-    //   description: "TEST: directs to youtube",
-    //   image: websiteImage1,
-    //   link: "https://www.youtube.com", // Replace with actual link
-    // },
+    {
+      title: "Outsource_html",
+      description:
+        "Website mockup design for an outsourcing business, showcasing a clean, modern interface with a focus on simplicity and functionality.",
+      image: websiteImage2,
+      link: "https://outsource-html.vercel.app/",
+    },
     // Add more projects as needed
   ];
 
